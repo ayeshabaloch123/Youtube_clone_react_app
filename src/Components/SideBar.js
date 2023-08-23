@@ -12,7 +12,7 @@ function SideBar({ selectedCategory, setSelectedCategory }) {
         flexDirection: { md: 'column' },
       }}
     >
-      {categories.map((category) => (
+      {categories.map((category, hpp) => (
         <button
           className='category-btn'
           onClick={() => setSelectedCategory(category.name)}

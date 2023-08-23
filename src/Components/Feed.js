@@ -36,9 +36,7 @@ const Feed = () => {
           Copyright © 2022 JSM Media
         </Typography>
       </Box>
-
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
-        <Videos videos={videos} />
         <Typography
           variant='h4'
           fontWeight='bold'
@@ -48,6 +46,8 @@ const Feed = () => {
           {' '}
           {selectedCategory} <span style={{ color: 'yellow' }}>videos</span>
         </Typography>
+
+        <Videos videos={videos} />
       </Box>
     </Stack>
   );
